@@ -105,6 +105,7 @@ Tom Pittenger
 Pedro Villegas
 Christian Llanes (llanesc)
 Ameer Hussain
+<<<<<<< HEAD
 sal-mo
 Koji Ohse(Homework)
 Giacomo Ornati
@@ -124,3 +125,6 @@ Biswajit Ghosh
 Kyle "Shelley" McILroy
 Sajjad Rahnama (Iran, Rasht 1398/06/07)
 kenhuyang
+=======
+Max Drougge
+>>>>>>> Tools: added name to GIT_Success.txt
