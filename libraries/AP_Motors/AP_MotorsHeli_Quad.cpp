@@ -252,6 +252,7 @@ void AP_MotorsHeli_Quad::move_actuators(float roll_out, float pitch_out, float c
             _collectiveFactor[CH_1+i] * collective_out;
     }
 
+    /*
     // see if we need to scale down yaw_out
     for (uint8_t i=0; i<AP_MOTORS_HELI_QUAD_NUM_MOTORS; i++) {
         float y = _yawFactor[CH_1+i] * yaw_out;
@@ -278,6 +279,8 @@ void AP_MotorsHeli_Quad::move_actuators(float roll_out, float pitch_out, float c
         }
         _out[i] += y;
     }
+    */
+    SRV_Channels::setoutput_scaled(SRV_Channel::k_rudder, yaw_out * 4500);
 
 }
 
